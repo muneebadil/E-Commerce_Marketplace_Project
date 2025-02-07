@@ -10,7 +10,7 @@ export default function Navbar() {
       <nav className="flex justify-between items-center px-6 py-4">
         {/* Brand Name */}
         <div className="text-2xl font-extrabold tracking-wide">
-          <span className="text-green-400">Asghar-</span>Shop
+          <span className="text-green-400">Muneeb-</span>Shop
         </div>
 
         {/* Desktop Menu */}
