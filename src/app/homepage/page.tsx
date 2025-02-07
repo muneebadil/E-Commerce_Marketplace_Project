@@ -1,6 +1,7 @@
 
 
-import ProductPage from "./products/page";
+import ProductPage from "../products/page";
+
 
 
 
@@ -11,7 +12,7 @@ export default function Home() {
     <div>
     
      <ProductPage/>
- 
+   
      {/* <FetchingProduct/> */}
     </div>
   );
