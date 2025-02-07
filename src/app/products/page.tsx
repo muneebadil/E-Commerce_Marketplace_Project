@@ -133,6 +133,7 @@
 // export default ProductPage;
 "use client";
 import { client } from "@/sanity/lib/client";
+import { groq } from "next-sanity";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -156,7 +157,7 @@ const ProductPage = () => {
     const fetchProducts = async () => {
       try {
         const data: Product[] = await client.fetch(
-          `*[_type == "product"]{
+          groq `*[_type == "product"]{
             _id,
             title,
             "imageURL": productImage.asset->url,
